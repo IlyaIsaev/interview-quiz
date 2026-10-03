@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "interview-quiz",
+  "main": "@tanstack/react-start/server-entry",
+  "compatibility_date": "2026-09-30",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+  },
+  "vars": {
+    "BETTER_AUTH_URL": "https://interview-quiz.iaisaev.workers.dev",
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "interview-quiz",
+      "database_id": "0043c7b6-703a-44c2-9d5e-00dd58c6570a",
+      "migrations_dir": "migrations",
+    },
+  ],
+}
